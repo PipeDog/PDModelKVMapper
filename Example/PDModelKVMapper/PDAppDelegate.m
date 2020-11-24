@@ -7,13 +7,48 @@
 //
 
 #import "PDAppDelegate.h"
+#import <PDModelKVMapper.h>
+#import "PDDataModel.h"
 
 @implementation PDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self parse];
     return YES;
+}
+
+- (void)parse {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"boolValue"] = @(YES);
+    dict[@"int8_value"] = @(-3);
+    dict[@"uint8_value"] = @3;
+    dict[@"int16_value"] = @(-99);
+    dict[@"uint16_value"] = @100;
+    dict[@"int32_value"] = @(-111);
+    dict[@"uint32_value"] = @222;
+    dict[@"int64_value"] = @-8765;
+    dict[@"uint64_value"] = @6789;
+    dict[@"floatValue"] = @(-2222.2222);
+    dict[@"doubleValue"] = @3333.3333;
+    dict[@"longDoubleValue"] = @9999.9999;
+    dict[@"objectValue"] = [NSMutableDictionary new];
+    dict[@"classValue"] = [NSMutableSet class];
+    dict[@"sel"] = NSStringFromSelector(@selector(testSEL));
+
+    dict[@"block"] = ^{
+        NSLog(@"block log something...");
+    };
+    
+    dict[@"sizeValue"] = [NSValue valueWithCGSize:CGSizeMake(100, 100)];
+    dict[@"rectValue"] = [NSValue valueWithCGRect:CGRectMake(10, 10, 200, 200)];
+    dict[@"charValue"] = @"char string";
+    
+    PDDataModel *model = [[PDDataModel alloc] init];
+    [[PDModelKVMapper defaultMapper] mapKeyValuePairs:dict toModel:model];
+    
+    NSLog(@"model = %@", model);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
