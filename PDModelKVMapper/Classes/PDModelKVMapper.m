@@ -119,7 +119,7 @@ static inline void PDModelSetNumberToProperty(__unsafe_unretained id model,
         return;
     }
     
-#define NEDataTypeMatchFailedAsset()                                                                \
+#define PDDataTypeMatchFailedAsset()                                                                \
     NSString *info = [NSString stringWithFormat:@"Data type match failed, type = %zd, value = %@",  \
                       (propertyInfo.type & PDEncodingTypeMask), value];                             \
     NSAssert(NO, info)
@@ -166,7 +166,7 @@ static inline void PDModelSetNumberToProperty(__unsafe_unretained id model,
                 SEL sel = NSSelectorFromString(value);
                 if (sel) ((void (*)(id, SEL, SEL))(void *) objc_msgSend)((id)model, propertyInfo.setter, (SEL)sel);
             } else {
-                NEDataTypeMatchFailedAsset();
+                PDDataTypeMatchFailedAsset();
             }
         } break;
             
@@ -174,7 +174,7 @@ static inline void PDModelSetNumberToProperty(__unsafe_unretained id model,
             if ([value isKindOfClass:NENSBlockClass()]) {
                 ((void (*)(id, SEL, void (^)(void)))(void *) objc_msgSend)((id)model, propertyInfo.setter, (void (^)(void))value);
             } else {
-                NEDataTypeMatchFailedAsset();
+                PDDataTypeMatchFailedAsset();
             }
         } break;
             
@@ -186,7 +186,7 @@ static inline void PDModelSetNumberToProperty(__unsafe_unretained id model,
                     [model setValue:value forKey:propertyInfo.name];
                 }
             } else {
-                NEDataTypeMatchFailedAsset();
+                PDDataTypeMatchFailedAsset();
             }
         } break;
             
@@ -195,7 +195,7 @@ static inline void PDModelSetNumberToProperty(__unsafe_unretained id model,
                 NSString *string = (NSString *)value;
                 ((void (*)(id, SEL, const char *))(void *) objc_msgSend)((id)model, propertyInfo.setter, [string UTF8String]);
             } else {
-                NEDataTypeMatchFailedAsset();
+                PDDataTypeMatchFailedAsset();
             }
         } break;
             
