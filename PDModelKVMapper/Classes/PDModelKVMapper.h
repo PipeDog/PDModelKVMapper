@@ -28,7 +28,7 @@ typedef NSString * PDModelPropertyName;     ///< model 属性名称
 ///  + (NSDictionary *)modelCustomPropertyNameMapper {
 ///      return @{@"n": @"name",
 ///               @"p": @"page",
-///               @"h"  : @"height"};
+///               @"h": @"height"};
 ///  }
 ///
 + (NSDictionary<PDModelDataSourceName, PDModelPropertyName> *)modelCustomPropertyNameMapper;
