@@ -11,7 +11,7 @@
 #import "PDClassPropertyInfo.h"
 
 /// Get the 'NSBlock' class.
-static inline Class NENSBlockClass() {
+static inline Class PDNSBlockClass() {
     static Class cls;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -171,7 +171,7 @@ static inline void PDModelSetNumberToProperty(__unsafe_unretained id model,
         } break;
             
         case PDEncodingTypeBlock: {
-            if ([value isKindOfClass:NENSBlockClass()]) {
+            if ([value isKindOfClass:PDNSBlockClass()]) {
                 ((void (*)(id, SEL, void (^)(void)))(void *) objc_msgSend)((id)model, propertyInfo.setter, (void (^)(void))value);
             } else {
                 PDDataTypeMatchFailedAsset();
