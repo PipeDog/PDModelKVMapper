@@ -1,0 +1,16 @@
+PODS:
+  - PDModelKVMapper (0.1.0)
+
+DEPENDENCIES:
+  - PDModelKVMapper (from `../`)
+
+EXTERNAL SOURCES:
+  PDModelKVMapper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PDModelKVMapper: 1ece4ef76df839e9fdb9129273f83421a014f36c
+
+PODFILE CHECKSUM: 6b1eb865088d9ca7ab560f5ebc74ecb8304d6b77
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,6 @@
+framework module Pods_PDModelKVMapper_Example {
+  umbrella header "Pods-PDModelKVMapper_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

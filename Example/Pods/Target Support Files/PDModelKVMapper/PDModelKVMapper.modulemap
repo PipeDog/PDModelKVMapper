@@ -1,0 +1,6 @@
+framework module PDModelKVMapper {
+  umbrella header "PDModelKVMapper-umbrella.h"
+
+  export *
+  module * { export * }
+}
