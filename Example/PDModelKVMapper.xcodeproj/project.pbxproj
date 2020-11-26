@@ -69,7 +69,7 @@
 		C73B70604023836146E7F154 /* Pods_PDModelKVMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDModelKVMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEC2DAC256CDF04005A5DD4 /* PDDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDataModel.h; sourceTree = "<group>"; };
 		DDEC2DAD256CDF04005A5DD4 /* PDDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDataModel.m; sourceTree = "<group>"; };
-		E4E9C408600C326A4C6E145E /* PDModelKVMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PDModelKVMapper.podspec; path = ../PDModelKVMapper.podspec; sourceTree = "<group>"; };
+		E4E9C408600C326A4C6E145E /* PDModelKVMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PDModelKVMapper.podspec; path = ../PDModelKVMapper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

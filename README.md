@@ -22,7 +22,7 @@ pod 'PDModelKVMapper'
 
 ## Author
 
-liang, leiliang4@xdf.cn
+liang, leiliang0128@163.com
 
 ## License
 
