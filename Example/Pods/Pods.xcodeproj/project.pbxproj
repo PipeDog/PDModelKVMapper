@@ -479,36 +479,6 @@
 			};
 			name = Release;
 		};
-		280F29D09EFDCE78E9A17D0748161C4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A8ECA380B5F322780D1D7961BE6C60D /* PDModelKVMapper.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PDModelKVMapper/PDModelKVMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper.modulemap";
-				PRODUCT_MODULE_NAME = PDModelKVMapper;
-				PRODUCT_NAME = PDModelKVMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3E79E8816D8E1656BD7622EEF5F6B1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC0BAAF344564C7A7D13609A35C966BC /* Pods-PDModelKVMapper_Tests.debug.xcconfig */;
@@ -672,37 +642,6 @@
 			};
 			name = Release;
 		};
-		CDBCF1C6B4825F0086B97DF094FD3E17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2087EFA43D7C2BF0DF6C1BE5C1083FDC /* PDModelKVMapper.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PDModelKVMapper/PDModelKVMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper.modulemap";
-				PRODUCT_MODULE_NAME = PDModelKVMapper;
-				PRODUCT_NAME = PDModelKVMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		CDC9CCFDE1D71046576D402F82172E80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F15A0D7AAB45B05BE0E94E83E1D5249E /* Pods-PDModelKVMapper_Example.debug.xcconfig */;
@@ -734,6 +673,67 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		D5FB90C32629500296CA0A88B9BCF531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8ECA380B5F322780D1D7961BE6C60D /* PDModelKVMapper.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDModelKVMapper/PDModelKVMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper.modulemap";
+				PRODUCT_MODULE_NAME = PDModelKVMapper;
+				PRODUCT_NAME = PDModelKVMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F19D8E026177BD0D3E795E7EF5D63D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2087EFA43D7C2BF0DF6C1BE5C1083FDC /* PDModelKVMapper.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDModelKVMapper/PDModelKVMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDModelKVMapper/PDModelKVMapper.modulemap";
+				PRODUCT_MODULE_NAME = PDModelKVMapper;
+				PRODUCT_NAME = PDModelKVMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -768,8 +768,8 @@
 		BD878E20072D8EC00D8593BBAC8BF775 /* Build configuration list for PBXNativeTarget "PDModelKVMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				280F29D09EFDCE78E9A17D0748161C4E /* Debug */,
-				CDBCF1C6B4825F0086B97DF094FD3E17 /* Release */,
+				D5FB90C32629500296CA0A88B9BCF531 /* Debug */,
+				F19D8E026177BD0D3E795E7EF5D63D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

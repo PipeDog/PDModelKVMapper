@@ -3,20 +3,20 @@
   "version": "0.1.0",
   "summary": "A short description of PDModelKVMapper.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/liang/PDModelKVMapper",
+  "homepage": "https://github.com/PipeDog/PDModelKVMapper",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "liang": "leiliang4@xdf.cn"
+    "liang": "leiliang0128@163.com"
   },
   "source": {
-    "git": "https://github.com/liang/PDModelKVMapper.git",
+    "git": "https://github.com/PipeDog/PDModelKVMapper",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "PDModelKVMapper/Classes/**/*"
 }
