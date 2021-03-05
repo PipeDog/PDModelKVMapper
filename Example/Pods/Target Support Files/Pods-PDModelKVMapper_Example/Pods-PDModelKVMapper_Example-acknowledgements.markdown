@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## PDModelKVMapper
 
-Copyright (c) 2020 liang <leiliang0128@163.com>
+Copyright (c) 2020 liang <1007279249@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
